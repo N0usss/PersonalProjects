@@ -1,5 +1,6 @@
 package TicTacToeProject;
 
+//Checking for the winner of the tic tac toe game
 public class GameLogic {
     
     private Board board;

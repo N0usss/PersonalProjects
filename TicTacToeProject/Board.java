@@ -1,5 +1,6 @@
 package TicTacToeProject;
 
+//A display for tic tac toe game
 public class Board {
     
     private String[] board;

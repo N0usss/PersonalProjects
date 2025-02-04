@@ -11,13 +11,16 @@ public class TicTacToe{
         Player player = new Player();
         String winner = null;
 
+        //Displaying the board
         System.out.println("Welcome to Tic Tac Toe!");
         board.printBoard();
 
+        //While there is no winner yet, the game is ongoing
         while (winner == null) {
             System.out.println(player.getTurn() + "'s turn; enter a slot number:");
             int numInput = 0;
 
+            //If player enter invalid slot, it will display the error
             try {
                 numInput = scanner.nextInt();
                 if (numInput < 1 || numInput > 9 || !board.isSlotAvailable(numInput)) {
