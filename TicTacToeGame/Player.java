@@ -1,4 +1,4 @@
-package TicTacToeProject;
+package TicTacToeGame;
 
 //Switching player using lambda expression
 public class Player {

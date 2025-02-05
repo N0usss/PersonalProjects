@@ -1,4 +1,4 @@
-package TicTacToeProject;
+package TicTacToeGame;
 
 //A display for tic tac toe game
 public class Board {

@@ -1,4 +1,4 @@
-package TicTacToeProject;
+package TicTacToeGame;
 
 //Checking for the winner of the tic tac toe game
 public class GameLogic {
