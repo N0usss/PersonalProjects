@@ -86,6 +86,45 @@ public class GamePackage {
 
     }
 
+    public static void enterForest(){
+
+        System.out.println("You walk through the ENCHANTED FOREST and encounter a CHIMERA");
+        System.out.println("1. Fight with the Creature");
+        System.out.println("2. Ignore and Continue Walking ");
+        System.out.println("Enter Your CHOICE: ");
+
+        Scanner in = new Scanner(System.in);
+        int choice = in.nextInt();
+
+        clear();
+
+        if(choice == 1){
+
+            int z = exploreRandom();
+            if(z == 0){
+
+                System.out.println("You tried to battle with the CHIMERA");
+                System.out.println("Unfortunately you missed the attack and it eats you alive");
+                System.out.println("YOU DIED");
+                System.out.println("Collected Score: " + score);
+
+                pause();
+            }
+            else{
+                
+                System.out.println("You fight the CHIMERA and you WIN the battle");
+                score = score + 200;
+                System.out.println("Your Score: " + score);
+                System.out.println("You're good to go Ahead");
+
+                pause();
+                clear();
+                confir();
+            }
+
+        }
+    }
+
     //Every Scenario happen for the game
     //END HERE
 
